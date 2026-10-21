@@ -1,0 +1,42 @@
+{
+  "started": "2026-10-19T11:22:56.953898",
+  "python": "3.13.3 (main, Apr  8 2025, 13:54:08) [Clang 17.0.0 (clang-1700.0.13.3)]",
+  "torch": "2.14.1",
+  "torchvision": "0.29.1",
+  "numpy": "2.5.4",
+  "platform": "macOS-27.0.1-arm64-arm-64bit-Mach-O",
+  "device": "cpu",
+  "threads": 1,
+  "args": {
+    "experiment": "all",
+    "epochs": null,
+    "steps": 350,
+    "output": "/Users/michellehtut/Documents/KMUTT_CPE/1ST_SEM/Deep Learning/RR/reproduction/results/reimplementation-20261019-112256"
+  },
+  "experiments": {
+    "himmelblau": {
+      "state": "completed",
+      "seconds": 0.4637633329984965
+    },
+    "toy": {
+      "state": "completed",
+      "seconds": 8.937215583006036
+    },
+    "tiny-mnist": {
+      "state": "completed",
+      "seconds": 14.045739291992504
+    },
+    "mnist": {
+      "state": "completed",
+      "seconds": 542.5254116249998
+    }
+  },
+  "source_sha256": {
+    "reproduction/__init__.py": "da9ac54eaeed1b2c4f83ecf6f08efc495e9c6109e193af6ca40babf60d0b56ad",
+    "reproduction/compare.py": "334b72f51926c607d1fc681a4739c775578acd1dd591e93583d36880452ff0f0",
+    "reproduction/experiments.py": "73626188b6e6fbc932782f0e138217056882c4359cdb8cf5545dc8b1cc2219ee",
+    "reproduction/optimizers.py": "47b17361b0094590e307cce02324887317d951c2223c1f0131d4ea90a7259aa5",
+    "reproduction/run.py": "4d526819f0515ac1b7169a9931e0beb457c42d5f3a7bf2eb8fe3a76f2a6571f9"
+  },
+  "finished": "2026-10-19T11:32:22.944320"
+}

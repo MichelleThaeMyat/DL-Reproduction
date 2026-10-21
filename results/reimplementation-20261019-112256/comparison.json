@@ -1,0 +1,1744 @@
+{
+  "passed": true,
+  "tolerance": {
+    "atol": 1e-08,
+    "rtol": 1e-06
+  },
+  "note": "MNIST summaries use full precision; epoch logs use original printed precision. Original batch losses and corrected Himmelblau trajectories are not compared.",
+  "checks": [
+    {
+      "check": "himmelblau/Adam/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/Adam/gradient_norm",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/Adam/final_position",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/RMSProp/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/RMSProp/gradient_norm",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/RMSProp/final_position",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/Nadam/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/Nadam/gradient_norm",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/Nadam/final_position",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Default/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Default/gradient_norm",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Default/final_position",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Grad Clip/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Grad Clip/gradient_norm",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "himmelblau/CALR Grad Clip/final_position",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "toy/Gradient CALR/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "toy/Hessian CALR/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "tiny-mnist/Gradient CALR/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "tiny-mnist/Hessian CALR/loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/Best Train Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/Best Train Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/Best Test Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/Best Test Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/Best Train Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/Best Train Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/Best Test Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/Best Test Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/Best Train Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/Best Train Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/Best Test Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/Best Test Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/Best Train Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/Best Train Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/Best Test Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/Best Test Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/Best Train Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/Best Train Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/Best Test Loss",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/Best Test Acc (%)",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-1-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-2-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-3-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-4-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-5-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-6-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-7-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-8-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-9-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-10-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-11-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-12-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-13-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-14-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-15-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-16-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-17-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-18-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-19-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-20-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-21-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-22-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-23-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-24-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-25-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-26-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-27-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-28-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-29-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-30-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-31-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-32-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-33-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-34-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-35-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-36-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-37-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-38-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-39-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-40-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-41-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-42-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-43-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-44-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-45-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-46-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-47-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-48-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-49-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Adam/epoch-50-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-1-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-2-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-3-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-4-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-5-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-6-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-7-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-8-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-9-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-10-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-11-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-12-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-13-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-14-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-15-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-16-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-17-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-18-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-19-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-20-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-21-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-22-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-23-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-24-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-25-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-26-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-27-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-28-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-29-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-30-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-31-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-32-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-33-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-34-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-35-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-36-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-37-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-38-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-39-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-40-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-41-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-42-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-43-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-44-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-45-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-46-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-47-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-48-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-49-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/Nadam/epoch-50-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-1-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-2-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-3-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-4-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-5-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-6-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-7-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-8-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-9-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-10-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-11-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-12-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-13-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-14-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-15-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-16-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-17-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-18-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-19-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-20-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-21-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-22-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-23-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-24-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-25-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-26-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-27-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-28-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-29-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-30-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-31-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-32-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-33-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-34-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-35-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-36-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-37-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-38-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-39-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-40-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-41-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-42-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-43-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-44-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-45-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-46-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-47-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-48-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-49-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/RMSProp/epoch-50-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-1-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-2-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-3-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-4-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-5-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-6-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-7-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-8-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-9-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-10-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-11-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-12-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-13-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-14-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-15-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-16-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-17-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-18-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-19-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-20-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-21-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-22-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-23-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-24-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-25-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-26-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-27-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-28-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-29-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-30-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-31-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-32-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-33-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-34-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-35-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-36-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-37-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-38-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-39-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-40-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-41-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-42-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-43-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-44-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-45-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-46-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-47-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-48-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-49-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/SGD/epoch-50-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-1-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-2-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-3-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-4-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-5-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-6-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-7-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-8-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-9-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-10-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-11-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-12-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-13-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-14-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-15-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-16-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-17-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-18-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-19-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-20-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-21-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-22-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-23-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-24-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-25-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-26-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-27-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-28-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-29-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-30-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-31-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-32-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-33-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-34-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-35-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-36-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-37-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-38-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-39-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-40-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-41-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-42-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-43-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-44-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-45-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-46-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-47-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-48-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-49-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    },
+    {
+      "check": "mnist/CALR Default/epoch-50-printed-metrics",
+      "passed": true,
+      "exact": true,
+      "max_absolute_difference": 0.0
+    }
+  ]
+}
