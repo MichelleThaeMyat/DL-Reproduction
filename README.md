@@ -1,6 +1,6 @@
 # CALR Research Reproduction
 
-This project contains a source-informed reimplementation of four experiments from Gayan Maduranga's CALR repository. It was developed with AI assistance. The original method and reference code are credited below; the original MIT license is retained.
+This project contains a source-informed reimplementation of four experiments from Gayan Maduranga's CALR repository. This project is the Research Reproduction. The original method and reference code are credited below; the original MIT license is retained.
 
 ## Scope
 
