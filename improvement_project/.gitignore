@@ -3,3 +3,6 @@ data/
 __pycache__/
 *.py[cod]
 .DS_Store
+
+# Keep report documents local.
+paper/

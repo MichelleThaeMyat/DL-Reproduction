@@ -4,12 +4,10 @@ This project contains a source-informed reimplementation of four experiments fro
 
 ## Improvement project
 
-The [controlled CALR improvement study](improvement_project/README.md) extends the reproduction with gradient-magnitude smoothing and cosine learning-rate decay. It includes five methods across three matched seeds, saved checkpoints, plots, verification tools, and a four-page IEEE-style paper.
+The [controlled CALR improvement study](improvement_project/README.md) extends the reproduction with gradient-magnitude smoothing and cosine learning-rate decay. It includes five methods across three matched seeds, saved checkpoints, plots, verification tools.
 
-The combined variant reduced mean test loss by 3.63%, but accuracy decreased from 97.84% to 97.78%. The paper discusses this tradeoff and the limits of the experiment. The original reproduction below remains separate because its training and evaluation protocol differs.
+The combined variant reduced mean test loss by 3.63%, but accuracy decreased from 97.84% to 97.78%. The original reproduction below remains separate because its training and evaluation protocol differs.
 
-- [Editable paper](improvement_project/paper/TMNH_CALR_Improvement_IEEE.docx)
-- [PDF paper](improvement_project/paper/TMNH_CALR_Improvement_IEEE.pdf)
 - [Setup and rerun instructions](improvement_project/README.md)
 - [Measured results](improvement_project/results/controlled/summary.csv)
 
