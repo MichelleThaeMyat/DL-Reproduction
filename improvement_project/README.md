@@ -64,3 +64,13 @@ python -m calr_improvement.diagnose --data data
 The verifier checks the included training-source hashes, matching initialization and shuffle metadata, validation selections, and test metrics recomputed from all 15 saved checkpoints. The diagnostic measures gradients on the first matched training batch. It does not choose hyperparameters or retrain models. The original config retains its historical dataset path; --data overrides that location on another computer. Checkpoint loading uses PyTorch weights_only=True.
 
 The report is kept locally and excluded from this repository. The protocol above explains why these scores cannot be compared directly with the earlier RR's best-test scores.
+
+## Latest local rerun
+
+`results/local_20261119_020311/` contains the latest completed 15-run experiment, including histories, summaries, checkpoints, and PNG/PDF plots. Validation-loss figures show mean ±1 sample standard deviation across the three seeds, with lighter colors and distinct markers.
+
+To regenerate its summaries and plots from this folder:
+
+```bash
+python -m calr_improvement.analyze --results results/local_20261119_020311
+```
