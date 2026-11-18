@@ -1,0 +1,10 @@
+{
+  "passed": true,
+  "runs": 15,
+  "checks": [
+    "training source hashes",
+    "paired initialization and shuffle seeds",
+    "validation checkpoint choice",
+    "saved checkpoint test metrics"
+  ]
+}
