@@ -13,8 +13,10 @@ python3.13 -m venv .venv
 source .venv/bin/activate
 python -m pip install -r requirements-lock.txt
 python -m calr_improvement.test_optimizer
-python -m calr_improvement.run --epochs 30 --seeds 42 43 44 --output results/rerun
+python -m calr_improvement.run --data data --epochs 30 --seeds 42 43 44 --output results/rerun
 python -m calr_improvement.analyze --results results/rerun
+python -m calr_improvement.verify --results results/rerun --data data
+python -m calr_improvement.diagnose --results results/rerun --data data
 ```
 
 On Windows, activate with `.venv\Scripts\activate`. The lock file records the tested environment. Package availability and exact floating-point agreement can vary across platforms. `requirements.txt` lists the direct dependencies if version pins are unavailable, but changing versions is a departure from the recorded environment.
@@ -57,10 +59,10 @@ All 15 runs completed. CALR averaged 97.8433% test accuracy and 0.073587 test lo
 ## Verify the included checkpoints
 
 ```bash
-python -m calr_improvement.verify --results results/local_20261124_134322 --data ../data
-python -m calr_improvement.diagnose --results results/local_20261124_134322 --data ../data
+python -m calr_improvement.verify --results results/local_20261124_134322 --data data
+python -m calr_improvement.diagnose --results results/local_20261124_134322 --data data
 ```
 
 The verifier checks the included training-source hashes, matching initialization and shuffle metadata, validation selections, and test metrics recomputed from all 15 saved checkpoints. The diagnostic measures gradients on the first matched training batch. It does not choose hyperparameters or retrain models. The original config retains its historical dataset path; --data overrides that location on another computer. Checkpoint loading uses PyTorch weights_only=True.
 
-For a new run, replace the results path with `results/rerun`. If your dataset is inside this folder, use `--data data`. Historical source hashes are preserved. Verification requires unchanged training code and explicitly reports changes to analysis or verification tools; those changes do not alter saved training results.
+For a new run, replace the results path with `results/rerun`. The commands above use this folder’s `data/`. If your dataset is in the repository root, use `--data ../data`. Historical source hashes are preserved. Verification requires unchanged training code and explicitly reports changes to analysis or verification tools; those changes do not alter saved training results.
