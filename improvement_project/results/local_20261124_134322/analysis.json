@@ -1,0 +1,134 @@
+{
+  "summary": [
+    {
+      "method": "CALR",
+      "n": 3,
+      "test_accuracy_mean": 97.84333333333332,
+      "test_accuracy_sd": 0.05033222956846824,
+      "test_loss_mean": 0.07358700914382935,
+      "test_loss_sd": 0.0030038736258454915,
+      "seconds_mean": 11.938004708014583,
+      "seconds_sd": 0.13781112381096702,
+      "selected_epoch_mean": 26.0,
+      "selected_epoch_sd": 2.6457513110645907
+    },
+    {
+      "method": "EMA-CALR",
+      "n": 3,
+      "test_accuracy_mean": 97.84999999999998,
+      "test_accuracy_sd": 0.043588989435412735,
+      "test_loss_mean": 0.07185807059605917,
+      "test_loss_sd": 0.0041480282251780175,
+      "seconds_mean": 13.662012208330756,
+      "seconds_sd": 1.0111495999491613,
+      "selected_epoch_mean": 25.0,
+      "selected_epoch_sd": 2.6457513110645907
+    },
+    {
+      "method": "Cosine-CALR",
+      "n": 3,
+      "test_accuracy_mean": 97.81,
+      "test_accuracy_sd": 0.07211102550927923,
+      "test_loss_mean": 0.07112815421422324,
+      "test_loss_sd": 0.0024592732136355403,
+      "seconds_mean": 11.897938624674376,
+      "seconds_sd": 0.18099534775017512,
+      "selected_epoch_mean": 28.0,
+      "selected_epoch_sd": 1.0
+    },
+    {
+      "method": "EMA-Cosine-CALR",
+      "n": 3,
+      "test_accuracy_mean": 97.78000000000002,
+      "test_accuracy_sd": 1.7404671430534633e-14,
+      "test_loss_mean": 0.07091678590774536,
+      "test_loss_sd": 0.002404985655533608,
+      "seconds_mean": 13.166602611008178,
+      "seconds_sd": 0.22358741744755325,
+      "selected_epoch_mean": 28.0,
+      "selected_epoch_sd": 1.0
+    },
+    {
+      "method": "SGD",
+      "n": 3,
+      "test_accuracy_mean": 97.84666666666665,
+      "test_accuracy_sd": 0.04725815626252871,
+      "test_loss_mean": 0.07402901191711425,
+      "test_loss_sd": 0.004764085136767903,
+      "seconds_mean": 6.314519319343769,
+      "seconds_sd": 0.04075991264535642,
+      "selected_epoch_mean": 13.0,
+      "selected_epoch_sd": 2.6457513110645907
+    }
+  ],
+  "paired": {
+    "EMA-CALR": {
+      "accuracy_differences_pp": [
+        -0.01999999999999602,
+        0.029999999999986926,
+        0.010000000000005116
+      ],
+      "mean_accuracy_difference_pp": 0.00666666666666534,
+      "accuracy_sd_pp": 0.025166114784228002,
+      "ci95_low": -0.05584942812942404,
+      "ci95_high": 0.06918276146275472,
+      "loss_differences": [
+        0.00018549518585204983,
+        -0.0008317694664001507,
+        -0.00454054136276244
+      ],
+      "mean_loss_difference": -0.0017289385477701803
+    },
+    "Cosine-CALR": {
+      "accuracy_differences_pp": [
+        -0.05999999999998806,
+        -0.04000000000000625,
+        0.0
+      ],
+      "mean_accuracy_difference_pp": -0.03333333333333144,
+      "accuracy_sd_pp": 0.030550504633034405,
+      "ci95_low": -0.1092249940081095,
+      "ci95_high": 0.04255832734144663,
+      "loss_differences": [
+        0.0010759327888488768,
+        -0.004314550209045406,
+        -0.0041379473686218166
+      ],
+      "mean_loss_difference": -0.0024588549296061155
+    },
+    "EMA-Cosine-CALR": {
+      "accuracy_differences_pp": [
+        -0.06999999999999318,
+        -0.010000000000005116,
+        -0.10999999999999943
+      ],
+      "mean_accuracy_difference_pp": -0.06333333333333258,
+      "accuracy_sd_pp": 0.05033222956846824,
+      "ci95_low": -0.18836552292554173,
+      "ci95_high": 0.06169885625887658,
+      "loss_differences": [
+        0.0005391650199890047,
+        -0.004299960517883297,
+        -0.0042498742103576626
+      ],
+      "mean_loss_difference": -0.002670223236083985
+    },
+    "SGD": {
+      "accuracy_differences_pp": [
+        -0.03999999999999204,
+        0.03999999999999204,
+        0.010000000000005116
+      ],
+      "mean_accuracy_difference_pp": 0.0033333333333350388,
+      "accuracy_sd_pp": 0.04041451884326635,
+      "ci95_low": -0.09706189703124286,
+      "ci95_high": 0.10372856369791293,
+      "loss_differences": [
+        7.911882400511716e-05,
+        0.00253077869415283,
+        -0.0012838891983032175
+      ],
+      "mean_loss_difference": 0.00044200277328490983
+    }
+  }
+}

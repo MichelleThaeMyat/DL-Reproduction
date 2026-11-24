@@ -1,0 +1,12 @@
+{
+  "passed": true,
+  "runs": 15,
+  "changed_nontraining_sources": [],
+  "checks": [
+    "training source hashes",
+    "complete disjoint train/validation split",
+    "paired initialization and shuffle seeds",
+    "validation checkpoint choice",
+    "saved checkpoint test metrics"
+  ]
+}

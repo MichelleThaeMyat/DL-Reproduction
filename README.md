@@ -9,7 +9,7 @@ The [controlled CALR improvement study](improvement_project/README.md) extends t
 The combined variant reduced mean test loss by 3.63%, but accuracy decreased from 97.84% to 97.78%. The original reproduction below remains separate because its training and evaluation protocol differs.
 
 - [Setup and rerun instructions](improvement_project/README.md)
-- [Measured results](improvement_project/results/controlled/summary.csv)
+- [Measured results](improvement_project/results/local_20261124_134322/summary.csv)
 
 ## Scope
 

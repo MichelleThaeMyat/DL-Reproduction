@@ -35,7 +35,7 @@ MNIST downloads automatically into `data/`. To reuse an existing copy, append `-
 
 ## Evidence
 
-`results/controlled/` contains the measured run, histories, summaries, analysis, figures, split indices, and selected model checkpoints. `config.json` records software versions, protocol and source hashes. `runs.csv` is the compact per-run result table. `analysis.json` includes sample standard deviations and paired differences. The 95% t interval uses only three seed pairs, so it is descriptive and assumption-sensitive, not proof of a general advantage. All seeds share one data split.
+`results/local_20261124_134322/` contains the measured run, histories, summaries, analysis, figures, split indices, and selected model checkpoints. `config.json` records software versions, protocol and source hashes. `runs.csv` is the compact per-run result table. `analysis.json` includes sample standard deviations and paired differences. The 95% t interval uses only three seed pairs, so it is descriptive and assumption-sensitive, not proof of a general advantage. All seeds share one data split.
 
 ## Difference from the earlier RR
 
@@ -57,20 +57,10 @@ All 15 runs completed. CALR averaged 97.8433% test accuracy and 0.073587 test lo
 ## Verify the included checkpoints
 
 ```bash
-python -m calr_improvement.verify --data data
-python -m calr_improvement.diagnose --data data
+python -m calr_improvement.verify --results results/local_20261124_134322 --data ../data
+python -m calr_improvement.diagnose --results results/local_20261124_134322 --data ../data
 ```
 
 The verifier checks the included training-source hashes, matching initialization and shuffle metadata, validation selections, and test metrics recomputed from all 15 saved checkpoints. The diagnostic measures gradients on the first matched training batch. It does not choose hyperparameters or retrain models. The original config retains its historical dataset path; --data overrides that location on another computer. Checkpoint loading uses PyTorch weights_only=True.
 
-The report is kept locally and excluded from this repository. The protocol above explains why these scores cannot be compared directly with the earlier RR's best-test scores.
-
-## Latest local rerun
-
-`results/local_20261119_020311/` contains the latest completed 15-run experiment, including histories, summaries, checkpoints, and PNG/PDF plots. Validation-loss figures show mean ±1 sample standard deviation across the three seeds, with lighter colors and distinct markers.
-
-To regenerate its summaries and plots from this folder:
-
-```bash
-python -m calr_improvement.analyze --results results/local_20261119_020311
-```
+For a new run, replace the results path with `results/rerun`. If your dataset is inside this folder, use `--data data`. Historical source hashes are preserved. Verification requires unchanged training code and explicitly reports changes to analysis or verification tools; those changes do not alter saved training results.

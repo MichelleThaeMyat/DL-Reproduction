@@ -48,8 +48,7 @@ def main():
             if key != 'Optimizer':
                 check(f'mnist/{name}/{key}', [float(row[key])], [float(actual[name][key])])
 
-    # Original logs store four decimal places for losses and two for accuracies.
-    # Compare at precisely that precision; do not pretend raw traces were saved.
+
     histories = json.loads((args.new / 'mnist' / 'metrics.json').read_text())
     pattern = re.compile(r'Epoch (\d+)/(\d+) - Train Loss: ([\d.]+) - Train Acc: ([\d.]+)% - Test Loss: ([\d.]+) - Test Acc: ([\d.]+)%')
     name, counts = None, {}

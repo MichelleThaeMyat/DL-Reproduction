@@ -41,8 +41,9 @@ def draw_figures(p, runs, methods, base):
         'EMA-Cosine-CALR': ('#AD83C4', ':', 'D', 'EMA+cosine'),
         'SGD': ('#999999', '--', 'v', 'SGD'),
     }
+    # Full progress and late detail use linear axes and the same measured data.
     fig, axes = plt.subplots(2, 1, figsize=(7, 5))
-    fig.subplots_adjust(left=.13, right=.98, top=.86, bottom=.12, hspace=.36)
+    fig.subplots_adjust(left=.14, right=.98, top=.82, bottom=.11, hspace=.43)
     late_bounds = []
     for i, method in enumerate(methods):
         color, line, marker, label = styles[method]
@@ -50,34 +51,38 @@ def draw_figures(p, runs, methods, base):
                               for r in runs if r['method'] == method])
         mean, sd = histories.mean(0), histories.std(0, ddof=1)
         xx = np.arange(1, len(mean) + 1)
+        late_start = max(1, len(mean)//2)
         for ax in axes:
             ax.plot(xx, mean, label=label, color=color, ls=line, marker=marker,
-                    markevery=(i % 4, 5), markersize=4, lw=1.7, zorder=3)
-            ax.fill_between(xx, mean-sd, mean+sd, color=color, alpha=.14, lw=0, zorder=1)
-        late = xx >= max(1, len(mean)//2)
+                    markevery=(i % 4, 5), markersize=3.4, markerfacecolor='white',
+                    markeredgewidth=.75, lw=1.1, zorder=3)
+            ax.fill_between(xx, mean-sd, mean+sd, color=color, alpha=.09, lw=0, zorder=1)
+        late = xx >= late_start
         late_bounds.extend((mean-sd)[late].tolist())
         late_bounds.extend((mean+sd)[late].tolist())
     axes[0].set_ylim(bottom=0)
-    axes[0].set_title('(a) Full training range · mean ± SD', loc='left', pad=5)
-    axes[1].set_title('(b) Late-training detail · mean ± SD', loc='left', pad=5)
-    lo, hi = min(late_bounds), max(late_bounds)
-    margin = max((hi-lo)*.18, .002)
-    axes[1].set_ylim(lo-margin, hi+margin)
-    # Late view uses its own horizontal range while preserving the full top panel.
     axes[0].set_xlim(1, len(mean))
-    axes[1].set_xlim(max(1, len(mean)//2), len(mean))
-    axes[0].tick_params(labelbottom=True)
     axes[0].set_xticks([1, 10, 20, len(mean)])
-    axes[1].set_xticks([max(1, len(mean)//2), 20, 25, len(mean)])
+    axes[0].set_title('(a) Full training range', loc='left', fontsize=11, pad=5)
+    axes[1].set_title('(b) Late-training detail · enlarged scale', loc='left', fontsize=11, pad=5)
+    lo, hi = min(late_bounds), max(late_bounds)
+    margin = max((hi-lo)*.12, .002)
+    axes[1].set_ylim(lo-margin, hi+margin)
+    axes[1].set_xlim(late_start, len(mean))
+    axes[1].set_xticks([late_start, 20, 25, len(mean)])
+    from matplotlib.ticker import FormatStrFormatter, MultipleLocator
+    axes[1].yaxis.set_major_locator(MultipleLocator(.01))
+    axes[1].yaxis.set_major_formatter(FormatStrFormatter('%.2f'))
     for ax in axes:
-        ax.grid(axis='y', color='#D9DFE5', lw=.7, zorder=0)
-        ax.tick_params(labelsize=12)
-    axes[1].set_xlabel('Epoch')
-    fig.text(.018, .47, 'Validation cross-entropy', rotation=90,
-             va='center', fontsize=14)
+        ax.grid(axis='y', color='#E6E6E6', lw=.6, zorder=0)
+        ax.tick_params(labelsize=10)
+    axes[1].set_xlabel('Epoch', fontsize=11)
+    fig.text(.025, .46, 'Validation cross-entropy', rotation=90, va='center', fontsize=12)
     handles, labels = axes[0].get_legend_handles_labels()
-    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(.54,1),
-               ncol=5, frameon=False, fontsize=11, columnspacing=.9, handlelength=1.7)
+    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(.55,1),
+               ncol=5, frameon=False, fontsize=9, columnspacing=1.2, handlelength=2)
+    fig.text(.55, .905, 'Lines: mean across 3 seeds   Shading: ±1 sample SD',
+             ha='center', fontsize=9)
     for ext in ['png', 'pdf']:
         fig.savefig(p/f'validation_loss.{ext}', dpi=450)
     plt.close(fig)

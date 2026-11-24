@@ -124,8 +124,6 @@ class DiagonalHessianCALR:
                                                      retain_graph=True, allow_unused=True)[0]
                     if derivative is not None:
                         diagonal.reshape(-1)[index] = derivative.reshape(-1)[index]
-            # .data is intentional ONLY to reproduce the reference's in-graph
-            # sequential mutation; changing it would change the experiment.
             parameter.data.sub_(self.lr / (diagonal.abs() + self.damping + 1e-8) * gradient)
         self.model.zero_grad(set_to_none=True)  # break backward(create_graph) cycles
         return value.detach()

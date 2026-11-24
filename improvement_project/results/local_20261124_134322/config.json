@@ -1,0 +1,49 @@
+{
+  "args": {
+    "data": "../data",
+    "output": "results/local_20261124_134322",
+    "epochs": 30,
+    "seeds": [
+      42,
+      43,
+      44
+    ]
+  },
+  "methods": [
+    "CALR",
+    "EMA-CALR",
+    "Cosine-CALR",
+    "EMA-Cosine-CALR",
+    "SGD"
+  ],
+  "split_seed": 12345,
+  "train": 50000,
+  "validation": 10000,
+  "test": 10000,
+  "batch_size": 64,
+  "initial_lr": 0.01,
+  "minimum_lr": 0.001,
+  "rho": 0.9,
+  "alpha": 0.1,
+  "beta1": 0.9,
+  "eps": 1e-08,
+  "selection": "minimum validation cross entropy; earliest tie",
+  "primary": "paired test accuracy difference EMA-Cosine-CALR minus CALR",
+  "python": "3.13.3",
+  "torch": "2.14.1",
+  "torchvision": "0.29.1",
+  "platform": "macOS-27.2.1-arm64-arm-64bit-Mach-O",
+  "threads": 1,
+  "source_sha256": {
+    "test_optimizer.py": "300a77214101eca6a8dd4abc8046a31d35671b09f37e5a09532c5459d588fc37",
+    "run.py": "66f50a51de705cbe93521b25e96d7f79b174712fda7bf61dfeaafa2e1bc747ca",
+    "__init__.py": "bc2e7264324ff406957c7ac52a4a7f966841df2b7d31defefc09a62cefd1b28e",
+    "optimizers.py": "39e42527df0c94a0035efbf160be9f3f583da2b4774134f537292be150289cc9",
+    "diagnose.py": "4c04eb97a16c8a0cb2efa8359a34f6122909480ed022fc1c1fc3044e8d975a66",
+    "reference_optimizers.py": "7d1f477cf83996fd4ae0a8b4f7128cff77dac11eb9461092c1625b7960200fd4",
+    "verify.py": "f38a1345a0d7dcad1372f435f9e0ba01b579bfe8786df6492856beb443d4beac",
+    "analyze.py": "381760da4bc63f2081b75930dbb567fa47e1086e025623a0e64ab323e3a85100"
+  },
+  "status": "completed",
+  "total_seconds": 171.21335887501482
+}

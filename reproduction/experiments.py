@@ -42,7 +42,6 @@ def himmelblau(steps=350):
         for _ in range(steps):
             optimizer.zero_grad()
             x, y = position.detach().numpy()
-            # Keep float32 NumPy arithmetic to match the reference benchmark.
             value = (x**2 + y - 11)**2 + (x + y**2 - 7)**2
             derivative = np.array([4*x*(x**2+y-11)+2*(x+y**2-7),
                                    2*(x**2+y-11)+4*y*(x+y**2-7)])
@@ -119,7 +118,6 @@ def mnist(epochs=50, progress=print):
                         loss_sum += loss.item()
                         correct += predictions.argmax(1).eq(labels).sum().item()
                         count += len(labels)
-                # Reference reports mean of batch means, not sample-weighted loss.
                 history[phase + '_loss'].append(loss_sum / len(loader))
                 history[phase + '_accuracy'].append(100.0 * correct / count)
             progress(f'{name}: epoch {epoch+1}/{epochs}, test accuracy '

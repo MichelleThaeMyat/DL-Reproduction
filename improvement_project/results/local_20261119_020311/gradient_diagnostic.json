@@ -1,0 +1,50 @@
+[
+  {
+    "seed": 42,
+    "stage": "initial",
+    "batch_size": 64,
+    "median_abs_gradient": 0.0006208210252225399,
+    "mean_abs_gradient": 0.0009450759971514344,
+    "fraction_below_alpha_over_10": 0.9986901879310608
+  },
+  {
+    "seed": 42,
+    "stage": "selected_CALR",
+    "batch_size": 64,
+    "median_abs_gradient": 0.0014016344211995602,
+    "mean_abs_gradient": 0.002519922098144889,
+    "fraction_below_alpha_over_10": 0.9647920727729797
+  },
+  {
+    "seed": 43,
+    "stage": "initial",
+    "batch_size": 64,
+    "median_abs_gradient": 0.0006342478445731103,
+    "mean_abs_gradient": 0.001040998613461852,
+    "fraction_below_alpha_over_10": 0.9982946515083313
+  },
+  {
+    "seed": 43,
+    "stage": "selected_CALR",
+    "batch_size": 64,
+    "median_abs_gradient": 9.886726184049621e-05,
+    "mean_abs_gradient": 0.00018671095313038677,
+    "fraction_below_alpha_over_10": 1.0
+  },
+  {
+    "seed": 44,
+    "stage": "initial",
+    "batch_size": 64,
+    "median_abs_gradient": 0.0007060030475258827,
+    "mean_abs_gradient": 0.0010558294598013163,
+    "fraction_below_alpha_over_10": 0.9985966086387634
+  },
+  {
+    "seed": 44,
+    "stage": "selected_CALR",
+    "batch_size": 64,
+    "median_abs_gradient": 0.00042085492168553174,
+    "mean_abs_gradient": 0.0008381906081922352,
+    "fraction_below_alpha_over_10": 0.999829888343811
+  }
+]

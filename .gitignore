@@ -1,6 +1,24 @@
+# Local environments, downloads and caches
 .venv/
+venv/
 data/
 __pycache__/
 *.py[cod]
 .DS_Store
-results/.mpl-cache/
+.mpl-cache/
+.pytest_cache/
+
+# Private documents
+paper/
+~$*
+
+# Local credentials and machine settings
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+secrets.json
+.aws/
+.ssh/
